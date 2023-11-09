@@ -1,0 +1,10 @@
+test_that("stat_info works", {
+  expect_equal(class(stat_info(0))[1], "numeric")
+  expect_equal(class(stat_info(c(1, 2, 3, 4)))[1], "numeric")
+  expect_error(stat_info(c("a", "b", "c", "d")))
+  expect_error(stat_info(NA))
+  expect_error(stat_info(c(NA)))
+  expect_error(stat_info(""))
+  expect_error(stat_info(c("")))
+  expect_error(stat_info(numeric(0)))
+})

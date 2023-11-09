@@ -1,0 +1,39 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# statInfo
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of statInfo is to output some statistics information about the input data.
+
+## Installation
+
+You can install the development version of statInfo like so:
+
+``` r
+devtools::install_github("stat545ubc-2023/assignment-b2-StevenDuan9/statInfo")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(statInfo)
+## basic example code
+stat_info(c(1,2,3,4,5,6,7,8,9))
+```
